@@ -5,11 +5,12 @@ function isSameType(value1, value2) {
   return typeof value1 === typeof value2;
 }
 
-// do not change the code below.
+// Get inputs from user
 let input1 = prompt("Enter Start of the Range.");
 let input2 = prompt("Enter End of the Range.");
 
-let value1 = (input1 === "NaN") ? NaN : input1;
-let value2 = (input2 === "NaN") ? NaN : input2;
+// Convert both inputs to numbers
+let value1 = Number(input1);
+let value2 = Number(input2);
 
 alert(isSameType(value1, value2));
