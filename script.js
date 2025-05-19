@@ -9,8 +9,7 @@ function isSameType(value1, value2) {
 let input1 = prompt("Enter Start of the Range.");
 let input2 = prompt("Enter End of the Range.");
 
-// Convert inputs to number if possible, otherwise keep as string
-let value1 = isNaN(Number(input1)) ? input1 : Number(input1);
-let value2 = isNaN(Number(input2)) ? input2 : Number(input2);
+let value1 = (input1 === "NaN") ? NaN : input1;
+let value2 = (input2 === "NaN") ? NaN : input2;
 
 alert(isSameType(value1, value2));
